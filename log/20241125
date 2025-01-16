@@ -1,0 +1,26 @@
+[20241125065733] - Log file opened
+[20241125065733] - server prepared at3000
+[20241125065733] - Get mysql connection
+[20241125073150] - user connected - 221.153.188.218
+[20241125073151] - 221.153.188.218 is disconnected...
+[20241125085015] - user connected - 64.62.156.109
+[20241125085015] - 64.62.156.109 message from user : GET / HTTP/1.1
+Host: 13.209.42.8:3000
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15
+Accept: */*
+Accept-Encoding: gzip
+
+
+[20241125085015] - 64.62.156.109 message to user : GET / HTTP/1.1
+Host: 13.209.42.8:3000
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15
+Accept: */*
+Accept-Encoding: gzip
+
+
+[20241125085015] - 64.62.156.109 is disconnected...
+[20241125124157] - user connected - 103.42.195.90
+[20241125124200] - 103.42.195.90 message from user : 
+[20241125124200] - 103.42.195.90 message to user : 
+[20241125124228] - 103.42.195.90 message to user : 
+[20241125124228] - 103.42.195.90 is disconnected...

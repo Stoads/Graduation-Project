@@ -1,0 +1,71 @@
+[20241014111432] - Log file opened
+[20241014111432] - server prepared at3000
+[20241014111432] - Get mysql connection
+[20241014111623] - user connected - 221.153.188.218
+[20241014111645] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241014111645] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241014111645] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241014111702] - 221.153.188.218 message from user : usersearch;testid
+[20241014111702] - Execuete query : SELECT nickname FROM user WHERE id = 'testid'
+[20241014111702] - 221.153.188.218 message to user : 700;testid;testnickname
+[20241014111730] - 221.153.188.218 message from user : usersearch;testid2
+[20241014111730] - Execuete query : SELECT nickname FROM user WHERE id = 'testid2'
+[20241014111730] - 221.153.188.218 message to user : 700;testid2;testnickname2
+[20241014111738] - 221.153.188.218 message from user : usersearch;testid3
+[20241014111738] - Execuete query : SELECT nickname FROM user WHERE id = 'testid3'
+[20241014111738] - 221.153.188.218 message to user : 700;testid3;testnn
+[20241014111801] - 221.153.188.218 message from user : befriend;testid
+[20241014111801] - Execute query : SELECT accepted FROM friend WHERE to_user_id='testcli' AND from_user_id='testid'
+[20241014111801] - Execute query : INSERT INTO friend(from_user_id, to_user_id, accepted) VALUES('testcli','testid','0')
+[20241014111801] - 221.153.188.218 message to user : 800;befriend success
+[20241014111844] - 221.153.188.218 is disconnected...
+[20241014111859] - user connected - 221.153.188.218
+[20241014111901] - 221.153.188.218 message from user : signin;testid;testpw
+[20241014111901] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241014111901] - 221.153.188.218 message to user : 100;testid;testnickname
+[20241014111915] - 221.153.188.218 message from user : befriend;testcli
+[20241014111915] - Execute query : SELECT accepted FROM friend WHERE to_user_id='testid' AND from_user_id='testcli'
+[20241014111915] - Execute query : INSERT INTO friend(from_user_id, to_user_id, accepted) VALUES('testid','testcli','1')
+[20241014111915] - 221.153.188.218 message to user : 806;friend insert error
+[20241014111956] - 221.153.188.218 is disconnected...
+[20241014112606] - Log file opened
+[20241014112606] - server prepared at3000
+[20241014112606] - Get mysql connection
+[20241014112632] - user connected - 221.153.188.218
+[20241014112641] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241014112641] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241014112641] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241014112648] - 221.153.188.218 message from user : befriend;testid
+[20241014112648] - Execute query : SELECT accepted FROM friend WHERE to_user_id='testcli' AND from_user_id='testid'
+[20241014112648] - Execute query : INSERT INTO friend(from_user_id, to_user_id, accepted) VALUES('testcli','testid','1')
+[20241014112648] - Execute query : INSERT INTO friend(to_user_id, from_user_id, accepted) VALUES('testcli','testid','0')
+[20241014112648] - 221.153.188.218 message to user : 800;befriend success
+[20241014112710] - 221.153.188.218 is disconnected...
+[20241014112711] - user connected - 221.153.188.218
+[20241014112719] - 221.153.188.218 message from user : signin;testid;testpw
+[20241014112719] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241014112719] - 221.153.188.218 message to user : 100;testid;testnickname
+[20241014112725] - 221.153.188.218 message from user : befriend;testcli
+[20241014112725] - Execute query : SELECT accepted FROM friend WHERE to_user_id='testid' AND from_user_id='testcli'
+[20241014112725] - 221.153.188.218 message to user : 807;already friend
+[20241014112935] - Log file opened
+[20241014112935] - server prepared at3000
+[20241014112935] - Get mysql connection
+[20241014112946] - user connected - 221.153.188.218
+[20241014112948] - 221.153.188.218 message from user : signin;testid;testpw
+[20241014112948] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241014112948] - 221.153.188.218 message to user : 100;testid;testnickname
+[20241014112953] - 221.153.188.218 message from user : befriend;testcli
+[20241014112953] - Execute query : SELECT accepted FROM friend WHERE to_user_id='testid' AND from_user_id='testcli'
+[20241014112953] - Execute query : UPDATE friend SET accepted=1 WHERE to_user_id='testid' AND from_user_id='testcli'
+[20241014112953] - Execute query : UPDATE friend SET accepted=1 WHERE from_user_id='testid' AND to_user_id='testcli'
+[20241014112953] - 221.153.188.218 message to user : 800;befriend success
+[20241014113056] - 221.153.188.218 message from user : signup;testcli;testpwpw;testnick
+[20241014113056] - 221.153.188.218 message to user : 201;already signined
+[20241014113117] - 221.153.188.218 is disconnected...
+[20241014113118] - user connected - 221.153.188.218
+[20241014113120] - 221.153.188.218 message from user : signup;testcli2;testpwpw;testnick
+[20241014113120] - Execuete query : SELECT id FROM user WHERE id = 'testcli2'
+[20241014113120] - Execuete query : INSERT INTO user(id,pw,nickname) VALUE('testcli2','testpwpw','testnick')
+[20241014113120] - 221.153.188.218 message to user : 200;signup success
+[20241014113131] - 221.153.188.218 is disconnected...

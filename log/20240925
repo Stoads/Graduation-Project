@@ -1,0 +1,73 @@
+[20240925124911] - Log file opened
+[20240925124911] - server prepared at3000
+[20240925124911] - Get mysql connection
+[20240925130254] - user connected - 221.153.188.218
+[20240925130303] - 221.153.188.218 is disconnected...
+[20240925130341] - user connected - 221.153.188.218
+[20240925130341] - 221.153.188.218 message from user : abcd
+[20240925130341] - 221.153.188.218 message to user : abcd
+[20240925130404] - user connected - 221.153.188.218
+[20240925130404] - 221.153.188.218 message from user : abcd
+[20240925130404] - 221.153.188.218 message to user : abcd
+[20240925130405] - user connected - 221.153.188.218
+[20240925130405] - 221.153.188.218 message from user : abcd
+[20240925130405] - 221.153.188.218 message to user : abcd
+[20240925130405] - user connected - 221.153.188.218
+[20240925130405] - 221.153.188.218 message from user : abcd
+[20240925130405] - 221.153.188.218 message to user : abcd
+[20240925130405] - user connected - 221.153.188.218
+[20240925130405] - 221.153.188.218 message from user : abcd
+[20240925130405] - 221.153.188.218 message to user : abcd
+[20240925130405] - user connected - 221.153.188.218
+[20240925130405] - 221.153.188.218 message from user : abcd
+[20240925130405] - 221.153.188.218 message to user : abcd
+[20240925130405] - user connected - 221.153.188.218
+[20240925130405] - 221.153.188.218 message from user : abcd
+[20240925130405] - 221.153.188.218 message to user : abcd
+[20240925130406] - user connected - 221.153.188.218
+[20240925130406] - 221.153.188.218 message from user : abcd
+[20240925130406] - 221.153.188.218 message to user : abcd
+[20240925130406] - user connected - 221.153.188.218
+[20240925130406] - 221.153.188.218 message from user : abcd
+[20240925130406] - 221.153.188.218 message to user : abcd
+[20240925130406] - user connected - 221.153.188.218
+[20240925130406] - 221.153.188.218 message from user : abcd
+[20240925130406] - 221.153.188.218 message to user : abcd
+[20240925130406] - user connected - 221.153.188.218
+[20240925130406] - 221.153.188.218 message from user : abcd
+[20240925130406] - 221.153.188.218 message to user : abcd
+[20240925130407] - user connected - 221.153.188.218
+[20240925130407] - 221.153.188.218 message from user : abcd
+[20240925130407] - 221.153.188.218 message to user : abcd
+[20240925130407] - user connected - 221.153.188.218
+[20240925130407] - 221.153.188.218 message from user : abcd
+[20240925130407] - 221.153.188.218 message to user : abcd
+[20240925130624] - Log file opened
+[20240925130624] - Error : bind() failed
+[20240925130627] - Log file opened
+[20240925130627] - Error : bind() failed
+[20240925130628] - Log file opened
+[20240925130628] - Error : bind() failed
+[20240925130631] - Log file opened
+[20240925130631] - Error : bind() failed
+[20240925130632] - Log file opened
+[20240925130632] - Error : bind() failed
+[20240925130632] - Log file opened
+[20240925130632] - Error : bind() failed
+[20240925130633] - Log file opened
+[20240925130633] - Error : bind() failed
+[20240925130634] - Log file opened
+[20240925130634] - Error : bind() failed
+[20240925130635] - Log file opened
+[20240925130635] - Error : bind() failed
+[20240925130637] - Log file opened
+[20240925130637] - Error : bind() failed
+[20240925130650] - Log file opened
+[20240925130650] - Error : bind() failed
+[20240925130701] - Log file opened
+[20240925130701] - server prepared at3000
+[20240925130701] - Get mysql connection
+[20240925131541] - user connected - 221.153.188.218
+[20240925131541] - 221.153.188.218 message from user : abcd
+[20240925131541] - 221.153.188.218 message to user : abcd
+[20240925131542] - 221.153.188.218 is disconnected...

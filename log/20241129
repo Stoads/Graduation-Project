@@ -1,0 +1,53 @@
+[20241129030439] - Log file opened
+[20241129030439] - server prepared at3000
+[20241129030439] - Get mysql connection
+[20241129042556] - user connected - 221.153.188.218
+[20241129042614] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241129042614] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241129042614] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241129042656] - 221.153.188.218 is disconnected...
+[20241129042939] - user connected - 221.153.188.218
+[20241129043011] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241129043011] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241129043011] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241129043101] - 221.153.188.218 is disconnected...
+[20241129044808] - user connected - 221.153.188.218
+[20241129044816] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241129044816] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241129044816] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241129054723] - Log file opened
+[20241129054723] - server prepared at3000
+[20241129054723] - Get mysql connection
+[20241129054741] - user connected - 221.153.188.218
+[20241129054805] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241129054805] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241129054805] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241129054845] - 221.153.188.218 is disconnected...
+[20241129055301] - user connected - 221.153.188.218
+[20241129055312] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241129055312] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241129055312] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241129055334] - 221.153.188.218 is disconnected...
+[20241129060152] - user connected - 221.153.188.218
+[20241129060200] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241129060200] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241129060200] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241129060224] - 221.153.188.218 is disconnected...
+[20241129060315] - user connected - 221.153.188.218
+[20241129060319] - 221.153.188.218 is disconnected...
+[20241129105749] - user connected - 184.105.247.194
+[20241129105749] - 184.105.247.194 message from user : GET / HTTP/1.1
+Host: 13.209.42.8:3000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0
+Accept: */*
+Accept-Encoding: gzip
+
+
+[20241129105749] - 184.105.247.194 message to user : GET / HTTP/1.1
+Host: 13.209.42.8:3000
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:125.0) Gecko/20100101 Firefox/125.0
+Accept: */*
+Accept-Encoding: gzip
+
+
+[20241129105750] - 184.105.247.194 is disconnected...

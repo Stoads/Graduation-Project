@@ -1,0 +1,38 @@
+[20240622132435] - Log file opened
+[20240622132435] - server prepared at %d3000
+[20240622132435] - Get mysql connection
+[20240622132518] - user connected - 175.119.8.102
+[20240622132559] - user connected - 175.119.8.102
+[20240622133106] - Log file opened
+[20240622133106] - server prepared at %d3000
+[20240622133106] - Get mysql connection
+[20240622133112] - Log file opened
+[20240622133112] - server prepared at %d3000
+[20240622133112] - Get mysql connection
+[20240622133131] - user connected - 175.119.8.102
+[20240622133132] - user connected - 175.119.8.102
+[20240622133146] - server closing
+[20240622133146] - Execuete 'show tables' query
+[20240622133146] - Log file closed
+[20240622133717] - Log file opened
+[20240622133717] - server prepared at %d3000
+[20240622133717] - Get mysql connection
+[20240622133720] - server closing
+[20240622133720] - Execuete 'show tables' query
+[20240622133720] - Log file closed
+[20240622133813] - Log file opened
+[20240622133813] - server prepared at %d3000
+[20240622133813] - Get mysql connection
+[20240622133819] - user connected - 175.119.8.102
+[20240622133820] - user connected - 175.119.8.102
+[20240622133828] - 175.119.8.102 message from user : Message logging test1
+
+[20240622133828] - 175.119.8.102 message to user : Message logging test1
+
+[20240622133833] - 175.119.8.102 message from user : Message logging test 2
+
+[20240622133833] - 175.119.8.102 message to user : Message logging test 2
+
+[20240622133840] - server closing
+[20240622133840] - Execuete 'show tables' query
+[20240622133840] - Log file closed

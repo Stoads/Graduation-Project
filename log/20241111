@@ -1,0 +1,53 @@
+[20241111071032] - Log file opened
+[20241111071032] - server prepared at3000
+[20241111071033] - Get mysql connection
+[20241111071036] - user connected - 221.153.188.218
+[20241111071046] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241111071046] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241111071046] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241111071141] - 221.153.188.218 message from user : upload;107
+[20241111071141] - Execuete query : SELECT TIMESTAMP(now())
+[20241111071141] - Execuete query : SELECT MAX(id) FROM diary
+[20241111071141] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-11 07:11:41', 'file/20-2024-11-11 07:11:41.xml')
+[20241111071141] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('20', '2024-11-11 07:11:41', 'file/20-2024-11-11 07:11:41.xml')
+[20241111071141] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '20', '65535')
+[20241111071141] - 221.153.188.218 message to user : 400;20;2024-11-11 07:11:41
+[20241111071230] - 221.153.188.218 is disconnected...
+[20241111071241] - user connected - 221.153.188.218
+[20241111071243] - 221.153.188.218 is disconnected...
+[20241111072613] - user connected - 221.153.188.218
+[20241111072622] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241111072622] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241111072622] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241111072639] - 221.153.188.218 message from user : upload;107
+[20241111072639] - Execuete query : SELECT TIMESTAMP(now())
+[20241111072639] - Execuete query : SELECT MAX(id) FROM diary
+[20241111072639] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-11 07:26:39', 'file/21-2024-11-11 07:26:39.xml')
+[20241111072639] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('21', '2024-11-11 07:26:39', 'file/21-2024-11-11 07:26:39.xml')
+[20241111072639] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '21', '65535')
+[20241111072639] - 221.153.188.218 message to user : 400;21;2024-11-11 07:26:39
+[20241111072923] - 221.153.188.218 is disconnected...
+[20241111074034] - user connected - 221.153.188.218
+[20241111074045] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241111074045] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241111074045] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241111074101] - 221.153.188.218 message from user : upload;107
+[20241111074101] - Execuete query : SELECT TIMESTAMP(now())
+[20241111074101] - Execuete query : SELECT MAX(id) FROM diary
+[20241111074101] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-11 07:41:01', 'file/22-2024-11-11 07:41:01.xml')
+[20241111074101] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('22', '2024-11-11 07:41:01', 'file/22-2024-11-11 07:41:01.xml')
+[20241111074101] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '22', '65535')
+[20241111074101] - 221.153.188.218 message to user : 400;22;2024-11-11 07:41:01
+[20241111074247] - 221.153.188.218 is disconnected...
+[20241111074342] - user connected - 221.153.188.218
+[20241111074349] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241111074349] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241111074349] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241111074405] - 221.153.188.218 message from user : upload;107
+[20241111074405] - Execuete query : SELECT TIMESTAMP(now())
+[20241111074405] - Execuete query : SELECT MAX(id) FROM diary
+[20241111074405] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-11 07:44:05', 'file/23-2024-11-11 07:44:05.xml')
+[20241111074405] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('23', '2024-11-11 07:44:05', 'file/23-2024-11-11 07:44:05.xml')
+[20241111074405] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '23', '65535')
+[20241111074405] - 221.153.188.218 message to user : 400;23;2024-11-11 07:44:05
+[20241111074530] - 221.153.188.218 is disconnected...

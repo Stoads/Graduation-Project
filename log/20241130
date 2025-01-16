@@ -1,0 +1,30 @@
+[20241130014810] - Log file opened
+[20241130014810] - server prepared at3000
+[20241130014811] - Get mysql connection
+[20241130061844] - user connected - 221.153.188.218
+[20241130061855] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241130061855] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241130061855] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241130061908] - 221.153.188.218 message from user : usersearch;testid
+[20241130061908] - Execuete query : SELECT nickname FROM user WHERE id = 'testid'
+[20241130061908] - 221.153.188.218 message to user : 700;testid;testnickname
+[20241130061914] - 221.153.188.218 message from user : befriend;testid
+[20241130061914] - Execute query : SELECT accepted FROM friend WHERE to_user_id='testcli' AND from_user_id='testid'
+[20241130061914] - 221.153.188.218 message to user : 807;already friend
+[20241130061941] - 221.153.188.218 message from user : upload;101
+[20241130061941] - Execuete query : SELECT TIMESTAMP(now())
+[20241130061941] - Execuete query : SELECT MAX(id) FROM diary
+[20241130061941] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-30 06:19:41', 'file/24-2024-11-30 06:19:41.xml')
+[20241130061941] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('24', '2024-11-30 06:19:41', 'file/24-2024-11-30 06:19:41.xml')
+[20241130061941] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '24', '65535')
+[20241130061941] - 221.153.188.218 message to user : 400;24;2024-11-30 06:19:41
+[20241130062022] - 221.153.188.218 message from user : signup;testcli2;testppsswwdd;test_nickname
+[20241130062022] - 221.153.188.218 message to user : 201;already signined
+[20241130062031] - 221.153.188.218 is disconnected...
+[20241130062033] - user connected - 221.153.188.218
+[20241130062037] - 221.153.188.218 message from user : signup;testcli2;testppsswwdd;test_nickname
+[20241130062037] - Execuete query : SELECT id FROM user WHERE id = 'testcli2'
+[20241130062037] - 221.153.188.218 message to user : 204;same id already exists
+[20241130062210] - 221.153.188.218 is disconnected...
+[20241130122608] - user connected - 98.80.4.28
+[20241130122608] - 98.80.4.28 message from user : 

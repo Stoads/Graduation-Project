@@ -1,0 +1,44 @@
+[20241011061855] - Log file opened
+[20241011061855] - server prepared at3000
+[20241011061855] - Get mysql connection
+[20241011062854] - user connected - 221.153.188.218
+[20241011063023] - 221.153.188.218 message from user : signin;ID: ;Password: 
+[20241011063023] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'ID: '
+[20241011063023] - 221.153.188.218 message to user : 104;wrong id or password
+[20241011063117] - 221.153.188.218 is disconnected...
+[20241011063209] - user connected - 221.153.188.218
+[20241011063232] - 221.153.188.218 message from user : signin;testid;testpw
+[20241011063232] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241011063232] - 221.153.188.218 message to user : 100;testid;testnickname
+[20241011063302] - 221.153.188.218 is disconnected...
+[20241011063307] - user connected - 221.153.188.218
+[20241011063347] - 221.153.188.218 message from user : signup;testid;testpw;nn
+[20241011063347] - Execuete query : SELECT id FROM user WHERE id = 'testid'
+[20241011063347] - 221.153.188.218 message to user : 204;same id already exists
+[20241011063512] - 221.153.188.218 message from user : signup;testcli;testpswd;nintendo
+[20241011063512] - Execuete query : SELECT id FROM user WHERE id = 'testcli'
+[20241011063512] - Execuete query : INSERT INTO user(id,pw,nickname) VALUE('testcli','testpswd','nintendo')
+[20241011063512] - 221.153.188.218 message to user : 200;signup success
+[20241011063527] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241011063527] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241011063527] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241011063543] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241011063543] - 221.153.188.218 message to user : 101;already signined
+[20241011063555] - 221.153.188.218 is disconnected...
+[20241011064541] - user connected - 198.235.24.150
+[20241011064543] - 198.235.24.150 message from user : GET / HTTP/1.0
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept: */*
+
+
+[20241011064543] - 198.235.24.150 message to user : GET / HTTP/1.0
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept: */*
+
+
+[20241011064612] - 198.235.24.150 message to user : GET / HTTP/1.0
+User-Agent: Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com
+Accept: */*
+
+
+[20241011064612] - 198.235.24.150 is disconnected...

@@ -1,0 +1,118 @@
+[20241104053450] - Log file opened
+[20241104053450] - server prepared at3000
+[20241104053450] - Get mysql connection
+[20241104053520] - user connected - 221.153.188.218
+[20241104053555] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104053555] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104053555] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104053642] - 221.153.188.218 message from user : <?xml version='1.0' encoding='UTF-8' standalone='yes' ?><diary><entry>this is a diary. just a diary. </entry></diary>
+[20241104053642] - 221.153.188.218 message to user : <?xml version='1.0' encoding='UTF-8' standalone='yes' ?><diary><entry>this is a diary. just a diary. </entry></diary>
+[20241104053715] - 221.153.188.218 is disconnected...
+[20241104055833] - user connected - 221.153.188.218
+[20241104055839] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104055839] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104055839] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104055903] - 221.153.188.218 message from user : upload;100
+[20241104055903] - Execuete query : SELECT TIMESTAMP(now())
+[20241104055903] - Execuete query : SELECT MAX(id) FROM diary
+[20241104055903] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 05:59:03', 'file/12-2024-11-04 05:59:03.xml')
+[20241104055903] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('12', '2024-11-04 05:59:03', 'file/12-2024-11-04 05:59:03.xml')
+[20241104055903] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '12', '65535')
+[20241104055903] - 221.153.188.218 message to user : 400;12;2024-11-04 05:59:03
+[20241104060314] - Log file opened
+[20241104060314] - Error : bind() failed
+[20241104060320] - Log file opened
+[20241104060320] - Error : bind() failed
+[20241104060336] - Log file opened
+[20241104060336] - Error : bind() failed
+[20241104060348] - Log file opened
+[20241104060348] - Error : bind() failed
+[20241104060349] - Log file opened
+[20241104060349] - Error : bind() failed
+[20241104060349] - Log file opened
+[20241104060349] - Error : bind() failed
+[20241104060358] - Log file opened
+[20241104060358] - Error : bind() failed
+[20241104060407] - Log file opened
+[20241104060407] - server prepared at3000
+[20241104060407] - Get mysql connection
+[20241104060848] - user connected - 221.153.188.218
+[20241104060858] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104060858] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104060858] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104060921] - 221.153.188.218 message from user : upload;114
+[20241104060921] - Execuete query : SELECT TIMESTAMP(now())
+[20241104060921] - Execuete query : SELECT MAX(id) FROM diary
+[20241104060921] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:09:21', 'file/13-2024-11-04 06:09:21.xml')
+[20241104060921] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('13', '2024-11-04 06:09:21', 'file/13-2024-11-04 06:09:21.xml')
+[20241104060921] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '13', '65535')
+[20241104060921] - 221.153.188.218 message to user : 400;13;2024-11-04 06:09:21
+[20241104061058] - user connected - 221.153.188.218
+[20241104061059] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104061059] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104061059] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104061114] - 221.153.188.218 message from user : upload;95
+[20241104061114] - Execuete query : SELECT TIMESTAMP(now())
+[20241104061114] - Execuete query : SELECT MAX(id) FROM diary
+[20241104061114] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:11:14', 'file/14-2024-11-04 06:11:14.xml')
+[20241104061114] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('14', '2024-11-04 06:11:14', 'file/14-2024-11-04 06:11:14.xml')
+[20241104061114] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '14', '65535')
+[20241104061114] - 221.153.188.218 message to user : 400;14;2024-11-04 06:11:14
+[20241104062451] - user connected - 221.153.188.218
+[20241104062500] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104062500] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104062500] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104062515] - 221.153.188.218 message from user : upload;107
+[20241104062515] - Execuete query : SELECT TIMESTAMP(now())
+[20241104062515] - Execuete query : SELECT MAX(id) FROM diary
+[20241104062515] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:25:15', 'file/15-2024-11-04 06:25:15.xml')
+[20241104062515] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('15', '2024-11-04 06:25:15', 'file/15-2024-11-04 06:25:15.xml')
+[20241104062515] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '15', '65535')
+[20241104062515] - 221.153.188.218 message to user : 400;15;2024-11-04 06:25:15
+[20241104062717] - user connected - 221.153.188.218
+[20241104062725] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104062725] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104062725] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104062738] - 221.153.188.218 message from user : upload;100
+[20241104062738] - Execuete query : SELECT TIMESTAMP(now())
+[20241104062738] - Execuete query : SELECT MAX(id) FROM diary
+[20241104062738] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:27:38', 'file/16-2024-11-04 06:27:38.xml')
+[20241104062738] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('16', '2024-11-04 06:27:38', 'file/16-2024-11-04 06:27:38.xml')
+[20241104062738] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '16', '65535')
+[20241104062738] - 221.153.188.218 message to user : 400;16;2024-11-04 06:27:38
+[20241104062954] - user connected - 221.153.188.218
+[20241104063000] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104063000] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104063000] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104063014] - 221.153.188.218 message from user : upload;100
+[20241104063014] - Execuete query : SELECT TIMESTAMP(now())
+[20241104063014] - Execuete query : SELECT MAX(id) FROM diary
+[20241104063014] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:30:14', 'file/17-2024-11-04 06:30:14.xml')
+[20241104063014] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('17', '2024-11-04 06:30:14', 'file/17-2024-11-04 06:30:14.xml')
+[20241104063014] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '17', '65535')
+[20241104063014] - 221.153.188.218 message to user : 400;17;2024-11-04 06:30:14
+[20241104063406] - user connected - 221.153.188.218
+[20241104063413] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104063413] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104063413] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104063425] - 221.153.188.218 message from user : upload;100
+[20241104063425] - Execuete query : SELECT TIMESTAMP(now())
+[20241104063425] - Execuete query : SELECT MAX(id) FROM diary
+[20241104063425] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:34:25', 'file/18-2024-11-04 06:34:25.xml')
+[20241104063425] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('18', '2024-11-04 06:34:25', 'file/18-2024-11-04 06:34:25.xml')
+[20241104063425] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '18', '65535')
+[20241104063425] - 221.153.188.218 message to user : 400;18;2024-11-04 06:34:25
+[20241104063520] - user connected - 221.153.188.218
+[20241104063531] - 221.153.188.218 is disconnected...
+[20241104063914] - user connected - 221.153.188.218
+[20241104063923] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241104063923] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241104063923] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241104063938] - 221.153.188.218 message from user : upload;100
+[20241104063938] - Execuete query : SELECT TIMESTAMP(now())
+[20241104063938] - Execuete query : SELECT MAX(id) FROM diary
+[20241104063938] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-11-04 06:39:38', 'file/19-2024-11-04 06:39:38.xml')
+[20241104063938] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('19', '2024-11-04 06:39:38', 'file/19-2024-11-04 06:39:38.xml')
+[20241104063938] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testcli', '19', '65535')
+[20241104063938] - 221.153.188.218 message to user : 400;19;2024-11-04 06:39:38
+[20241104064105] - 221.153.188.218 is disconnected...

@@ -1,0 +1,44 @@
+[20241128122601] - Log file opened
+[20241128122601] - server prepared at3000
+[20241128122601] - Get mysql connection
+[20241128125548] - user connected - 221.153.188.218
+[20241128125605] - 221.153.188.218 is disconnected...
+[20241128131102] - user connected - 221.153.188.218
+[20241128131204] - 221.153.188.218 is disconnected...
+[20241128131215] - user connected - 221.153.188.218
+[20241128131245] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128131245] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128131245] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128131245] - 221.153.188.218 is disconnected...
+[20241128131529] - user connected - 221.153.188.218
+[20241128131541] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128131541] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128131541] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128131556] - 221.153.188.218 is disconnected...
+[20241128131904] - user connected - 221.153.188.218
+[20241128131912] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128131912] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128131912] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128131912] - 221.153.188.218 is disconnected...
+[20241128132144] - user connected - 221.153.188.218
+[20241128132153] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128132153] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128132153] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128132153] - 221.153.188.218 is disconnected...
+[20241128132449] - user connected - 221.153.188.218
+[20241128132457] - 221.153.188.218 is disconnected...
+[20241128134143] - user connected - 221.153.188.218
+[20241128134210] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128134210] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128134210] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128134210] - 221.153.188.218 is disconnected...
+[20241128134642] - user connected - 221.153.188.218
+[20241128134652] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128134652] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128134652] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128134652] - 221.153.188.218 is disconnected...
+[20241128134914] - user connected - 221.153.188.218
+[20241128134921] - 221.153.188.218 message from user : signin;testcli;testpswd
+[20241128134921] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testcli'
+[20241128134921] - 221.153.188.218 message to user : 100;testcli;nintendo
+[20241128135000] - 221.153.188.218 is disconnected...

@@ -1,0 +1,280 @@
+[20240901041736] - Log file opened
+[20240901041736] - server prepared at3000
+[20240901041736] - Get mysql connection
+[20240901041740] - user connected - 175.119.8.102
+[20240901041742] - user connected - 175.119.8.102
+[20240901041819] - Log file opened
+[20240901041819] - Error : bind() failed
+[20240901041828] - Log file opened
+[20240901041828] - Error : bind() failed
+[20240901041829] - Log file opened
+[20240901041829] - Error : bind() failed
+[20240901041831] - Log file opened
+[20240901041831] - server prepared at3001
+[20240901041831] - Get mysql connection
+[20240901041834] - user connected - 175.119.8.102
+[20240901041838] - user connected - 175.119.8.102
+[20240901041855] - 175.119.8.102 message from user : for client exit test
+
+[20240901041855] - 175.119.8.102 message to user : for client exit test
+
+[20240901041857] - 175.119.8.102 is disconnected...
+[20240901041925] - 175.119.8.102 message from user : koremo kuraiannto ga deru no wo tamesu tame
+
+[20240901041925] - 175.119.8.102 message to user : koremo kuraiannto ga deru no wo tamesu tame
+
+[20240901041927] - 175.119.8.102 is disconnected...
+[20240901045242] - Log file opened
+[20240901045242] - server prepared at3000
+[20240901045242] - Get mysql connection
+[20240901045249] - user connected - 175.119.8.102
+[20240901045252] - user connected - 175.119.8.102
+[20240901045325] - 175.119.8.102 message from user : signin;testid;testpw
+
+[20240901045325] - Execuete query : SELECT id,pw,nickname FROM user WHERE id='testid'
+[20240901045325] - 175.119.8.102 message to user : 104/wrong id or password
+[20240901045328] - 175.119.8.102 message from user : 
+ignin
+[20240901045328] - 175.119.8.102 message to user : 
+ignin
+[20240901045333] - 175.119.8.102 message from user : signin;testid;testpw;
+
+[20240901045333] - 175.119.8.102 message to user : 102/signin sentence error
+[20240901045354] - 175.119.8.102 is disconnected...
+[20240901045357] - 175.119.8.102 is disconnected...
+[20240901045508] - Log file opened
+[20240901045508] - server prepared at3000
+[20240901045508] - Get mysql connection
+[20240901045522] - user connected - 175.119.8.102
+[20240901045527] - 175.119.8.102 message from user : signin;testid;testpw
+
+[20240901045527] - Execuete query : SELECT id,pw,nickname FROM user WHERE id='testid'
+[20240901045527] - 175.119.8.102 message to user : 104/wrong id or password
+[20240901045538] - 175.119.8.102 is disconnected...
+[20240901045738] - Log file opened
+[20240901045738] - server prepared at3000
+[20240901045738] - Get mysql connection
+[20240901045742] - user connected - 175.119.8.102
+[20240901045752] - 175.119.8.102 message from user : signin;testid;testpw
+
+[20240901045752] - Execuete query : SELECT id,pw,nickname FROM user WHERE id='testid'
+[20240901045752] - 175.119.8.102 message to user : 104/wrong id or password
+[20240901045808] - 175.119.8.102 message from user : 
+ignin
+[20240901045808] - 175.119.8.102 message to user : 
+
+
+[20240901045823] - 175.119.8.102 message from user : signin;testid;testpw;
+
+[20240901045823] - 175.119.8.102 message to user : 102/signin sentence error
+[20240901045827] - 175.119.8.102 message from user : 
+ignin
+[20240901045827] - 175.119.8.102 message to user : 
+
+
+[20240901045855] - 175.119.8.102 message from user : signin;testid;test12
+
+
+[20240901050032] - Log file opened
+[20240901050032] - server prepared at3000
+[20240901050032] - Get mysql connection
+[20240901050039] - user connected - 175.119.8.102
+[20240901050047] - 175.119.8.102 message from user : signin;testid;testpw
+
+[20240901050047] - Execuete query : SELECT id,pw,nickname FROM user WHERE id='testid'
+[20240901050047] - 175.119.8.102 message to user : 100/signin success
+[20240901050050] - 175.119.8.102 message from user : 
+ignin
+[20240901050050] - 175.119.8.102 is disconnected...
+[20240901050307] - Log file opened
+[20240901050307] - server prepared at3000
+[20240901050307] - Get mysql connection
+[20240901050311] - user connected - 175.119.8.102
+[20240901050312] - 175.119.8.102 message from user : 
+
+[20240901050354] - Log file opened
+[20240901050354] - Error : bind() failed
+[20240901050357] - Log file opened
+[20240901050357] - Error : bind() failed
+[20240901050357] - Log file opened
+[20240901050357] - server prepared at3001
+[20240901050358] - Get mysql connection
+[20240901050400] - user connected - 175.119.8.102
+[20240901050403] - 175.119.8.102 message from user : 
+
+[20240901050403] - 175.119.8.102 message to user : 
+
+
+[20240901050410] - 175.119.8.102 message from user : signin;testid;testpw;
+
+[20240901050410] - Execuete query : SELECT id,pw,nickname FROM user WHERE id='testid'
+[20240901050410] - 175.119.8.102 message to user : 100/signin success
+[20240901050413] - 175.119.8.102 message from user : 
+ignin
+[20240901050413] - 175.119.8.102 message to user : 
+
+
+[20240901050418] - 175.119.8.102 message from user : signin;testid;testpw;
+
+[20240901050418] - 175.119.8.102 message to user : 101/elready signined
+[20240901050418] - Execuete query : SELECT id,pw,nickname FROM user WHERE id='testid'
+[20240901050418] - 175.119.8.102 message to user : 100/signin success
+[20240901050419] - 175.119.8.102 message from user : 
+ignin
+[20240901050419] - 175.119.8.102 message to user : 
+
+
+[20240901050640] - 175.119.8.102 is disconnected...
+[20240901053142] - Log file opened
+[20240901053142] - server prepared at3000
+[20240901053143] - Get mysql connection
+[20240901053150] - user connected - 175.119.8.102
+[20240901053204] - 175.119.8.102 message from user : signup;testid3;testpw;testnn
+
+[20240901053204] - 175.119.8.102 message to user : signup
+[20240901053211] - 175.119.8.102 is disconnected...
+[20240901053422] - Log file opened
+[20240901053422] - server prepared at3000
+[20240901053422] - Get mysql connection
+[20240901053425] - user connected - 175.119.8.102
+[20240901053430] - 175.119.8.102 message from user : signup;testid3;testpw;testnn
+
+[20240901053430] - Execuete query : SELECT id FROM user WHERE id = 'testid3'
+[20240901053430] - Execuete query : INSERT INTO user(id,pw,nickname) VALUE('testid3','testpw','testnn')
+[20240901053430] - 175.119.8.102 message to user : 200/signup success
+[20240901053438] - 175.119.8.102 message from user : signup;
+estid3
+[20240901053438] - 175.119.8.102 message to user : 202/signup sentence error
+[20240901053458] - 175.119.8.102 message from user : signin;testid3;testpw
+testnn
+[20240901053458] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid3'
+[20240901053458] - 175.119.8.102 message to user : 100/signin success
+[20240901053502] - 175.119.8.102 message from user : signup;
+estid3
+[20240901053502] - 175.119.8.102 message to user : 201/already signined
+[20240901053505] - 175.119.8.102 message from user : signin;
+estid3
+[20240901053505] - 175.119.8.102 message to user : 101/already signined
+[20240901053513] - 175.119.8.102 message from user : signout
+estid3
+[20240901053513] - 175.119.8.102 message to user : 300/signout success
+[20240901053524] - 175.119.8.102 message from user : signin;testid3;tespw
+
+[20240901053524] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid3'
+[20240901053524] - 175.119.8.102 message to user : 104/wrong id or password
+[20240901053533] - 175.119.8.102 message from user : signin;testid3;testpw
+testnn
+[20240901053923] - Log file opened
+[20240901053923] - server prepared at3000
+[20240901053923] - Get mysql connection
+[20240901053927] - user connected - 175.119.8.102
+[20240901053934] - 175.119.8.102 message from user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901053934] - 175.119.8.102 message to user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901053942] - 175.119.8.102 message from user : signin;testid3;testpw
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901053942] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid3'
+[20240901053942] - 175.119.8.102 message to user : 100/signin success
+[20240901053946] - 175.119.8.102 message from user : signout
+estid3
+[20240901053946] - 175.119.8.102 message to user : 300/signout success
+[20240901053951] - 175.119.8.102 message from user : signin;testid3;testpw
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901053951] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid3'
+[20240901053951] - 175.119.8.102 message to user : 100/signin success
+[20240901053954] - 175.119.8.102 is disconnected...
+[20240901054602] - Log file opened
+[20240901054602] - server prepared at3000
+[20240901054602] - Get mysql connection
+[20240901054606] - user connected - 175.119.8.102
+[20240901054610] - 175.119.8.102 message from user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901054610] - 175.119.8.102 message to user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901054615] - 175.119.8.102 message from user : signin;testid3;testpw
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901054615] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid3'
+[20240901054615] - 175.119.8.102 message to user : 100/signin success
+[20240901054619] - 175.119.8.102 message from user : signout
+estid3
+[20240901054619] - 175.119.8.102 message to user : 300/signout success
+[20240901054624] - 175.119.8.102 message from user : signin;testid;testpw;
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901054624] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20240901054624] - 175.119.8.102 message to user : 100/signin success
+[20240901054625] - 175.119.8.102 message from user : signout
+estid
+[20240901054625] - 175.119.8.102 message to user : 300/signout success
+[20240901054627] - 175.119.8.102 is disconnected...
+[20240901055040] - Log file opened
+[20240901055040] - server prepared at3000
+[20240901055040] - Get mysql connection
+[20240901055042] - user connected - 175.119.8.102
+[20240901055048] - 175.119.8.102 message from user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055048] - 175.119.8.102 message to user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055056] - 175.119.8.102 message from user : signin;testid;testpw
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055056] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20240901055056] - 175.119.8.102 message to user : 100/signin success
+[20240901055119] - 175.119.8.102 message from user : signout
+estid
+[20240901055119] - 175.119.8.102 message to user : 300/signout success
+[20240901055127] - 175.119.8.102 message from user : sginin;testid;testpw
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055127] - 175.119.8.102 message to user : sginin
+[20240901055135] - 175.119.8.102 message from user : 
+ginin
+[20240901055135] - 175.119.8.102 message to user : 
+
+
+[20240901055204] - 175.119.8.102 message from user : signin;testid;testpw;
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055204] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20240901055204] - 175.119.8.102 message to user : 100/signin success
+[20240901055210] - 175.119.8.102 message from user : signout
+estid
+[20240901055210] - 175.119.8.102 message to user : 300/signout success
+[20240901055212] - 175.119.8.102 is disconnected...
+[20240901055639] - Log file opened
+[20240901055639] - server prepared at3000
+[20240901055639] - Get mysql connection
+[20240901055912] - Log file opened
+[20240901055912] - server prepared at3000
+[20240901055912] - Get mysql connection
+[20240901055925] - user connected - 175.119.8.102
+[20240901055928] - 175.119.8.102 message from user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055928] - 175.119.8.102 message to user : aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+[20240901055933] - 175.119.8.102 message from user : signin;testid;testpw
+
+[20240901055933] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20240901055933] - 175.119.8.102 message to user : 100/signin success
+[20240901055934] - 175.119.8.102 message from user : signout
+
+[20240901055934] - 175.119.8.102 message to user : 300/signout success
+[20240901055940] - 175.119.8.102 message from user : signin;testid3;testpw
+
+[20240901055940] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid3'
+[20240901055940] - 175.119.8.102 message to user : 100/signin success
+[20240901055943] - 175.119.8.102 message from user : signout
+
+[20240901055943] - 175.119.8.102 message to user : 300/signout success
+[20240901055950] - 175.119.8.102 message from user : signin;testid2;testpw2
+
+[20240901055950] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid2'
+[20240901055950] - 175.119.8.102 message to user : 100/signin success
+[20240901055951] - 175.119.8.102 message from user : signout
+
+[20240901055951] - 175.119.8.102 message to user : 300/signout success
+[20240901055951] - 175.119.8.102 is disconnected...

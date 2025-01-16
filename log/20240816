@@ -1,0 +1,75 @@
+[20240816121931] - Log file opened
+[20240816121931] - server prepared at %d3000
+[20240816121931] - server prepared at %d3001
+[20240816121931] - server prepared at %d3002
+[20240816121931] - Get mysql connection
+[20240816121948] - user connected - 175.119.8.102
+[20240816121953] - 175.119.8.102 message from user : Test
+[20240816121953] - 175.119.8.102 message to user : Test
+[20240816122005] - 175.119.8.102 message from user : signin;test;test
+[20240816122005] - 175.119.8.102 message to user : 208/incorrect id
+[20240816122013] - server closing
+[20240816122013] - Execuete 'show tables' query
+[20240816122013] - Log file closed
+[20240816124944] - Log file opened
+[20240816124944] - server prepared at %d3000
+[20240816124944] - server prepared at %d3001
+[20240816124944] - server prepared at %d3002
+[20240816124944] - Get mysql connection
+[20240816124947] - 175.119.8.102 message to user : accessed
+[20240816125804] - Log file opened
+[20240816125804] - server prepared at %d3000
+[20240816125804] - server prepared at %d3001
+[20240816125804] - server prepared at %d3002
+[20240816125804] - Get mysql connection
+[20240816125809] - 175.119.8.102 message to user : accessed
+[20240816130005] - Log file opened
+[20240816130005] - server prepared at %d3000
+[20240816130005] - server prepared at %d3001
+[20240816130005] - server prepared at %d3002
+[20240816130005] - Get mysql connection
+[20240816130011] - 175.119.8.102 message to user : accessed
+[20240816130213] - Log file opened
+[20240816130213] - server prepared at %d3000
+[20240816130213] - server prepared at %d3001
+[20240816130213] - server prepared at %d3002
+[20240816130213] - Get mysql connection
+[20240816130218] - 175.119.8.102 message to user : accessed
+[20240816131421] - Log file opened
+[20240816131421] - server prepared at3000
+[20240816131421] - server prepared at3001
+[20240816131421] - server prepared at3002
+[20240816131421] - Get mysql connection
+[20240816131431] - 175.119.8.102 message to user : accessed
+[20240816131431] - user connected - 175.119.8.102
+[20240816131440] - 175.119.8.102 message from user : nanande
+[20240816131440] - 175.119.8.102 message to user : nanande
+[20240816132544] - server closing
+[20240816132544] - Execuete 'show tables' query
+[20240816132544] - Log file closed
+[20240816132608] - Log file opened
+[20240816132608] - Error : bind() failed
+[20240816132611] - Log file opened
+[20240816132611] - Error : bind() failed
+[20240816132614] - Log file opened
+[20240816132614] - server prepared at4000
+[20240816132614] - server prepared at5000
+[20240816132614] - server prepared at6000
+[20240816132614] - Get mysql connection
+[20240816132619] - 175.119.8.102 message to user : accessed
+[20240816132619] - user connected - 175.119.8.102
+[20240816132631] - 175.119.8.102 message from user : nannde????
+[20240816132631] - 175.119.8.102 message to user : nannde????
+[20240816132636] - server closing
+[20240816132636] - Execuete 'show tables' query
+[20240816132636] - Log file closed
+[20240816133035] - Log file opened
+[20240816133035] - server prepared at4000
+[20240816133035] - server prepared at5000
+[20240816133035] - server prepared at6000
+[20240816133036] - Get mysql connection
+[20240816133040] - 175.119.8.102 message to user : accessed
+[20240816133040] - user connected - 175.119.8.102
+[20240816133222] - server closing
+[20240816133222] - Execuete 'show tables' query
+[20240816133222] - Log file closed

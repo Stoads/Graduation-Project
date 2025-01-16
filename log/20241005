@@ -1,0 +1,1142 @@
+[20241005212508] - Log file opened
+[20241005212508] - server prepared at3000
+[20241005212508] - Get mysql connection
+[20241005212522] - user connected - 175.119.8.102
+[20241005212522] - 175.119.8.102 message from user : singin;testid;testpw
+[20241005212522] - 175.119.8.102 message to user : singin;testid;testpw
+[20241005212522] - 175.119.8.102 message from user : upload;1404
+[20241005212522] - Execuete query : SELECT TIMESTAMP(now())
+[20241005212522] - Execuete query : SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLE WHERE TABLE_NAME = 'diary'
+[20241005212522] - 175.119.8.102 message to user : 404;diary id creating failed
+[20241005212522] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005212522] - 175.119.8.102 message to user : 
+[20241005212522] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212522] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212522] - 175.119.8.102 is disconnected...
+[20241005212839] - Log file opened
+[20241005212839] - server prepared at3000
+[20241005212839] - Get mysql connection
+[20241005212841] - user connected - 175.119.8.102
+[20241005212841] - 175.119.8.102 message from user : singin;testid;testpw
+[20241005212841] - 175.119.8.102 message to user : singin;testid;testpw
+[20241005212841] - 175.119.8.102 message from user : upload;1404
+[20241005212841] - 175.119.8.102 message to user : 401;not signed
+[20241005212841] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005212841] - 175.119.8.102 message to user : 
+[20241005212841] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212841] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212841] - 175.119.8.102 is disconnected...
+[20241005212910] - user connected - 175.119.8.102
+[20241005212910] - 175.119.8.102 message from user : singin;testid;testpw
+[20241005212910] - 175.119.8.102 message to user : singin;testid;testpw
+[20241005212910] - 175.119.8.102 message from user : upload;1404
+[20241005212910] - 175.119.8.102 message to user : 401;not signed
+[20241005212910] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005212910] - 175.119.8.102 message to user : 
+[20241005212910] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212910] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212910] - 175.119.8.102 is disconnected...
+[20241005212923] - user connected - 175.119.8.102
+[20241005212923] - 175.119.8.102 message from user : singin;testid;testpw
+[20241005212923] - 175.119.8.102 message to user : singin;testid;testpw
+[20241005212923] - 175.119.8.102 message from user : upload;1404
+[20241005212923] - 175.119.8.102 message to user : 401;not signed
+[20241005212923] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005212923] - 175.119.8.102 message to user : 
+[20241005212923] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212923] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212923] - 175.119.8.102 is disconnected...
+[20241005212938] - user connected - 175.119.8.102
+[20241005212938] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005212938] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005212938] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005212938] - 175.119.8.102 message from user : upload;1404
+[20241005212938] - Execuete query : SELECT TIMESTAMP(now())
+[20241005212938] - Execuete query : SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'diary'
+[20241005212938] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:29:38', 'file/2.xml')
+[20241005212938] - Execuete query : INSERT INTO diary_history(diary_id, version, link) VALUES('2', '2024-10-05 21:29:38', 'file/2.xml')
+[20241005212938] - 175.119.8.102 message to user : 407;diary_history create failed
+[20241005212938] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005212938] - 175.119.8.102 message to user : 
+[20241005212938] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212938] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005212938] - 175.119.8.102 is disconnected...
+[20241005213150] - Log file opened
+[20241005213150] - server prepared at3000
+[20241005213150] - Get mysql connection
+[20241005213154] - user connected - 175.119.8.102
+[20241005213154] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005213154] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005213154] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005213154] - 175.119.8.102 message from user : upload;1404
+[20241005213154] - Execuete query : SELECT TIMESTAMP(now())
+[20241005213154] - Execuete query : SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'diary'
+[20241005213154] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:31:54', 'file/2.xml')
+[20241005213154] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('2', '2024-10-05 21:31:54', 'file/2.xml')
+[20241005213154] - Execuete query : INSET INTO authority(user_id,diary_id,authority) VALUES('testid', '2', '-1')
+[20241005213154] - 175.119.8.102 message to user : 408;authority create failed
+[20241005213154] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005213154] - 175.119.8.102 message to user : 
+[20241005213154] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213154] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213154] - 175.119.8.102 is disconnected...
+[20241005213333] - Log file opened
+[20241005213333] - server prepared at3000
+[20241005213333] - Get mysql connection
+[20241005213334] - user connected - 175.119.8.102
+[20241005213334] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005213334] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005213334] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005213334] - 175.119.8.102 message from user : upload;1404
+[20241005213334] - Execuete query : SELECT TIMESTAMP(now())
+[20241005213334] - Execuete query : SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'diary'
+[20241005213334] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:33:34', 'file/2.xml')
+[20241005213334] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('2', '2024-10-05 21:33:34', 'file/2.xml')
+[20241005213334] - 175.119.8.102 message to user : 407;diary_history create failed
+[20241005213334] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005213334] - 175.119.8.102 message to user : 
+[20241005213334] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213334] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213334] - 175.119.8.102 is disconnected...
+[20241005213452] - user connected - 175.119.8.102
+[20241005213452] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005213452] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005213452] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005213452] - 175.119.8.102 message from user : upload;1404
+[20241005213452] - Execuete query : SELECT TIMESTAMP(now())
+[20241005213452] - Execuete query : SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'diary'
+[20241005213452] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:34:52', 'file/2.xml')
+[20241005213452] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('2', '2024-10-05 21:34:52', 'file/2.xml')
+[20241005213452] - 175.119.8.102 message to user : 407;diary_history create failed
+[20241005213452] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005213452] - 175.119.8.102 message to user : 
+[20241005213452] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213452] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213452] - 175.119.8.102 is disconnected...
+[20241005213943] - Log file opened
+[20241005213943] - server prepared at3000
+[20241005213943] - Get mysql connection
+[20241005213946] - user connected - 175.119.8.102
+[20241005213946] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005213946] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005213946] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005213946] - 175.119.8.102 message from user : upload;1404
+[20241005213946] - Execuete query : SELECT TIMESTAMP(now())
+[20241005213946] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:39:46', 'file/-1616111147.xml')
+[20241005213946] - Execuete query : SELECT LAST_INESERT_ID()
+[20241005213946] - 175.119.8.102 message to user : 406;diary id creating failed
+[20241005213946] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005213946] - 175.119.8.102 message to user : 
+[20241005213946] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213946] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005213946] - 175.119.8.102 is disconnected...
+[20241005214541] - Log file opened
+[20241005214541] - server prepared at3000
+[20241005214541] - Get mysql connection
+[20241005214547] - user connected - 175.119.8.102
+[20241005214547] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005214547] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005214547] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005214547] - 175.119.8.102 message from user : upload;1404
+[20241005214547] - Execuete query : SELECT TIMESTAMP(now())
+[20241005214547] - Execuete query : SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'diary'
+[20241005214547] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:45:47', 'file/2.xml')
+[20241005214547] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('2', '2024-10-05 21:45:47', 'file/2.xml')
+[20241005214547] - 175.119.8.102 message to user : 407;diary_history create failed
+[20241005214547] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005214547] - 175.119.8.102 message to user : 
+[20241005214547] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005214547] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005214547] - 175.119.8.102 is disconnected...
+[20241005215444] - Log file opened
+[20241005215444] - server prepared at3000
+[20241005215444] - Get mysql connection
+[20241005215449] - user connected - 175.119.8.102
+[20241005215449] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005215449] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005215449] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005215449] - 175.119.8.102 message from user : upload;1404
+[20241005215449] - Execuete query : SELECT TIMESTAMP(now())
+[20241005215449] - Execuete query : SELECT MAX(id) FROM diary
+[20241005215449] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:54:49', 'file/9.xml')
+[20241005215449] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('9', '2024-10-05 21:54:49', 'file/9.xml')
+[20241005215449] - Execuete query : INSET INTO authority(user_id,diary_id,authority) VALUES('testid', '9', '-1')
+[20241005215449] - 175.119.8.102 message to user : 408;authority create failed
+[20241005215449] - 175.119.8.102 message from user : #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+
+#define BUF_SIZE 1024
+void error_handling(char *message);
+
+int main(int argc, char *argv[])
+{
+	FILE* fp;
+	int sock;
+	char message[BUF_SIZE];
+	int len,f_size;
+	struct sockaddr_in serv_adr;
+
+	if(argc!=4) {
+		printf("Usage : %s <IP> <port>\n", argv[0]);
+		exit(1);
+	}
+	
+	sock=socket(PF_INET, SOCK_STREAM, 0);   
+	if(sock==-1)
+		error_handling("socket() error");
+	
+	memset(&serv_adr, 0, sizeof(serv_adr));
+	serv_adr.sin_family=AF_INET;
+	serv_adr.sin_addr.s_addr=inet_addr(argv[1]);
+	serv_adr.sin_port=htons(atoi(argv[2]));
+	if(connect(sock, (struct sockaddr*)&serv_adr, sizeof(serv_adr))==-1)
+		error_handling("connect() error!");
+	else
+		puts("Connected...........");
+	fp=fopen(argv[3],"rb");
+	fseek(fp,0,SEEK_END);
+	f_size=ftell(fp);
+	fseek(fp,0,SEEK_SET);
+
+	len=sprintf(message,"%s;%s;%d","upload",argv[3],f_size);
+	write(sock,message,len);
+	len=read(sock,
+[20241005215449] - 175.119.8.102 message to user : 
+[20241005215449] - 175.119.8.102 message from user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005215449] - 175.119.8.102 message to user : message,BUF_SIZE-1);
+	message[len]=0;
+	printf("Message from server: %s", message);
+	
+	for(int i=f_size;f_size>0;f_size-=BUF_SIZE) {
+		fgets(message, f_size>BUF_SIZE ? BUF_SIZE : f_size, fp);
+		write(sock, message, len);
+	}
+	fclose(fp);	
+	close(sock);
+	return 0;
+}
+
+void error_handling(char *message)
+{
+	fputs(message, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
+
+[20241005215449] - 175.119.8.102 is disconnected...
+[20241005215828] - Log file opened
+[20241005215828] - server prepared at3000
+[20241005215828] - Get mysql connection
+[20241005215831] - user connected - 175.119.8.102
+[20241005215831] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005215831] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005215831] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005215831] - 175.119.8.102 message from user : upload;1404
+[20241005215831] - Execuete query : SELECT TIMESTAMP(now())
+[20241005215831] - Execuete query : SELECT MAX(id) FROM diary
+[20241005215831] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 21:58:31', 'file/10.xml')
+[20241005215831] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('10', '2024-10-05 21:58:31', 'file/10.xml')
+[20241005215831] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testid', '10', '65535')
+[20241005215831] - 175.119.8.102 message to user : 400;10;2024-10-05 21:58:31
+[20241005215831] - 175.119.8.102 is disconnected...
+[20241005220034] - Log file opened
+[20241005220034] - server prepared at3000
+[20241005220034] - Get mysql connection
+[20241005220038] - user connected - 175.119.8.102
+[20241005220038] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005220038] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005220038] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005220038] - 175.119.8.102 message from user : upload;1404
+[20241005220038] - Execuete query : SELECT TIMESTAMP(now())
+[20241005220038] - Execuete query : SELECT MAX(id) FROM diary
+[20241005220038] - Execuete query : INSERT INTO diary(date, link) VALUES('2024-10-05 22:00:38', 'file/11-2024-10-05 22:00:38.xml')
+[20241005220038] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('11', '2024-10-05 22:00:38', 'file/11-2024-10-05 22:00:38.xml')
+[20241005220038] - Execuete query : INSERT INTO authority(user_id,diary_id,authority) VALUES('testid', '11', '65535')
+[20241005220038] - 175.119.8.102 message to user : 400;11;2024-10-05 22:00:38
+[20241005220038] - 175.119.8.102 is disconnected...
+[20241005224133] - Log file opened
+[20241005224133] - server prepared at3000
+[20241005224133] - Get mysql connection
+[20241005224144] - user connected - 175.119.8.102
+[20241005224144] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005224144] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005224144] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005224144] - 175.119.8.102 message from user : update;11;2024-10-05 22:00:38;1404
+[20241005224144] - Execuete query : SELECT TIMESTAMP(now())
+[20241005224144] - Execuete query : SELECT date FROM diary WHERE id = '11'
+[20241005224144] - Execuete query : SELECT authority FROM authority WHERE user_id = 'testid' and diary_id = '11'
+[20241005224144] - Execuete query : UPDATE diary SET date='2024-10-05 22:41:44', link='file/11-2024-10-05 22:41:44.xml' WHERE id='11'
+[20241005224144] - Execuete query : INSERT INTO diary_history(id, version, link) VALUES('11','2024-10-05 22:41:44','file/11-2024-10-05 22:41:44.xml')
+[20241005224144] - 175.119.8.102 message to user : 500;11;2024-10-05 22:41:44
+[20241005224144] - 175.119.8.102 is disconnected...
+[20241005224150] - user connected - 175.119.8.102
+[20241005224150] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005224150] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005224150] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005224150] - 175.119.8.102 message from user : update;11;2024-10-05 22:00:38;1404
+[20241005224150] - Execuete query : SELECT TIMESTAMP(now())
+[20241005224150] - Execuete query : SELECT date FROM diary WHERE id = '11'
+[20241005224150] - 175.119.8.102 message to user : 505;update exists
+[20241005224150] - 175.119.8.102 is disconnected...
+[20241005232947] - Log file opened
+[20241005232947] - server prepared at3000
+[20241005232947] - Get mysql connection
+[20241005233006] - user connected - 175.119.8.102
+[20241005233013] - 175.119.8.102 message from user : usersearch;testid
+
+[20241005233013] - Execuete query : SELECT nickname FROM user WHERE id = 'testid'
+[20241005233013] - 175.119.8.102 message to user : 700;testid;testnickname
+[20241005233025] - 175.119.8.102 is disconnected...
+[20241005234758] - Log file opened
+[20241005234758] - server prepared at3000
+[20241005234758] - Get mysql connection
+[20241005234809] - user connected - 175.119.8.102
+[20241005234809] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005234809] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005234809] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005234809] - 175.119.8.102 message from user : dowunload;11
+[20241005234809] - 175.119.8.102 message to user : dowunload;11
+[20241005234809] - 175.119.8.102 is disconnected...
+[20241005234905] - user connected - 175.119.8.102
+[20241005234905] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005234905] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005234905] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005234905] - 175.119.8.102 message from user : download;11
+[20241005234905] - Execuete query : SELECT authority FROM authority WHERE user_id='testid' AND diary_id='11'
+[20241005234905] - Execuete query : SELECT date,link FROM diary WHERE id='11'
+[20241005234905] - 175.119.8.102 message to user : 600;11;2024-10-05 22:41:44;1404
+[20241005234905] - 175.119.8.102 message from user : test
+[20241005234905] - 175.119.8.102 is disconnected...
+[20241005235025] - user connected - 175.119.8.102
+[20241005235025] - 175.119.8.102 message from user : signin;testid;testpw
+[20241005235025] - Execuete query : SELECT id,pw,nickname FROM user WHERE id = 'testid'
+[20241005235025] - 175.119.8.102 message to user : 100;testid;testnickname
+[20241005235025] - 175.119.8.102 message from user : download;11
+[20241005235025] - Execuete query : SELECT authority FROM authority WHERE user_id='testid' AND diary_id='11'
+[20241005235025] - Execuete query : SELECT date,link FROM diary WHERE id='11'
+[20241005235025] - 175.119.8.102 message to user : 600;11;2024-10-05 22:41:44;1404
+[20241005235025] - 175.119.8.102 message from user : test
+[20241005235025] - 175.119.8.102 is disconnected...

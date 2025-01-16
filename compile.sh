@@ -1,0 +1,3 @@
+./link.sh
+./build.sh
+

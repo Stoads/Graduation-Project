@@ -1,0 +1,20 @@
+[20240903021040] - Log file opened
+[20240903021040] - server prepared at3000
+[20240903021040] - Get mysql connection
+[20240903033148] - user connected - 71.6.232.20
+[20240903033148] - 71.6.232.20 message from user : GET / HTTP/1.1
+Host: 13.209.42.8:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+
+[20240903033148] - 71.6.232.20 message to user : GET / HTTP/1.1
+Host: 13.209.42.8:3000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: */*
+Accept-Encoding: gzip
+
+
+[20240903033148] - 71.6.232.20 is disconnected...
+[20240903041142] - user connected - 167.94.145.111

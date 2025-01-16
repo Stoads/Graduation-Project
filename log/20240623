@@ -1,0 +1,176 @@
+[20240623221838] - Log file opened
+[20240623221838] - server prepared at %d3000
+[20240623221838] - Get mysql connection
+[20240623222715] - user connected - 175.119.8.102
+[20240623222719] - 175.119.8.102 message from user : test
+
+[20240623222719] - 175.119.8.102 message to user : test
+
+[20240623222738] - 175.119.8.102 message from user : signup/testid/testpw/testnickname
+
+[20240623222738] - 175.119.8.102 message to user : signup/testid/testpw/testnickname
+
+[20240623222752] - user connected - 175.119.8.102
+[20240623222801] - 175.119.8.102 message from user : signup;testid;testpw;testnickname
+
+[20240623222801] - 175.119.8.102 message to user : 205/db query error occured
+[20240623222836] - server closing
+[20240623222836] - Execuete 'show tables' query
+[20240623222836] - Log file closed
+[20240623222901] - Log file opened
+[20240623222901] - Error : bind() failed
+[20240623222928] - Log file opened
+[20240623222928] - server prepared at %d3000
+[20240623222928] - Get mysql connection
+[20240623222940] - user connected - 175.119.8.102
+[20240623222942] - 175.119.8.102 message from user : a
+
+[20240623222942] - 175.119.8.102 message to user : a
+
+[20240623222957] - 175.119.8.102 message from user : signup;testid;testpw;testnickname
+
+[20240623222957] - 175.119.8.102 message to user : 200/success
+[20240623223002] - 175.119.8.102 message from user : 
+
+[20240623223002] - 175.119.8.102 message to user : 
+
+[20240623223014] - 175.119.8.102 message from user : signup;testid;testpw2;testnickname2
+
+[20240623223014] - 175.119.8.102 message to user : 204/same id already exists
+[20240623223018] - 175.119.8.102 message from user : 
+
+[20240623223018] - 175.119.8.102 message to user : 
+
+[20240623223032] - 175.119.8.102 message from user : signup;testid2;testpw2;testnickname2
+
+[20240623223032] - 175.119.8.102 message to user : 200/success
+[20240623223039] - server closing
+[20240623223039] - Execuete 'show tables' query
+[20240623223039] - Log file closed
+[20240623223925] - Log file opened
+[20240623223925] - server prepared at %d3000
+[20240623223925] - Get mysql connection
+[20240623223937] - user connected - 175.119.8.102
+[20240623224002] - 175.119.8.102 message from user : signup;testid;testpw;testnickname
+[20240623224002] - 175.119.8.102 message to user : 200/success
+[20240623224015] - 175.119.8.102 message from user : signup;testid2;testpw2;testnickname2;
+[20240623224015] - 175.119.8.102 message to user : 200/success
+[20240623224020] - server closing
+[20240623224020] - Execuete 'show tables' query
+[20240623224020] - Log file closed
+[20240623231834] - Log file opened
+[20240623231834] - server prepared at %d3000
+[20240623231834] - Get mysql connection
+[20240623231841] - user connected - 175.119.8.102
+[20240623231849] - 175.119.8.102 message from user : singin;testid;test
+[20240623231849] - 175.119.8.102 message to user : singin;testid;test
+[20240623231900] - server closing
+[20240623231900] - Execuete 'show tables' query
+[20240623231900] - Log file closed
+[20240623232011] - Log file opened
+[20240623232011] - server prepared at %d3000
+[20240623232011] - Get mysql connection
+[20240623232019] - user connected - 175.119.8.102
+[20240623232030] - 175.119.8.102 message from user : signup;testid;test;test
+[20240623232030] - 175.119.8.102 message to user : 206/already signed
+[20240623232032] - 175.119.8.102 message from user : 
+[20240623232144] - Log file opened
+[20240623232144] - server prepared at %d3000
+[20240623232144] - Get mysql connection
+[20240623232147] - user connected - 175.119.8.102
+[20240623232147] - 175.119.8.102 message from user : 
+
+[20240623232147] - 175.119.8.102 message to user : 
+
+[20240623232159] - 175.119.8.102 message from user : signup;test;
+[20240623232159] - 175.119.8.102 message to user : 206/already signed
+[20240623232202] - 175.119.8.102 message from user : 
+
+[20240623232202] - 175.119.8.102 message to user : 
+
+[20240623232221] - 175.119.8.102 message from user : signin;test
+[20240623232221] - 175.119.8.102 message to user : 206/already signed
+[20240623232226] - server closing
+[20240623232226] - Execuete 'show tables' query
+[20240623232226] - Log file closed
+[20240623232321] - Log file opened
+[20240623232321] - server prepared at %d3000
+[20240623232321] - Get mysql connection
+[20240623232325] - user connected - 175.119.8.102
+[20240623232330] - 175.119.8.102 message from user : signup;test
+[20240623232330] - 175.119.8.102 message to user : 202/signup messag form error
+[20240623232332] - 175.119.8.102 message from user : 
+
+[20240623232332] - 175.119.8.102 message to user : 
+
+[20240623232343] - 175.119.8.102 message from user : signup;testid;test;test
+[20240623232343] - 175.119.8.102 message to user : 204/same id already exists
+[20240623232346] - 175.119.8.102 message from user : 
+
+[20240623232346] - 175.119.8.102 message to user : 
+
+[20240623232346] - 175.119.8.102 message from user : 
+
+[20240623232346] - 175.119.8.102 message to user : 
+
+[20240623232346] - 175.119.8.102 message from user : 
+
+[20240623232346] - 175.119.8.102 message to user : 
+
+[20240623232346] - 175.119.8.102 message from user : 
+
+[20240623232346] - 175.119.8.102 message to user : 
+
+[20240623232405] - 175.119.8.102 message from user : signup;testid;test;test
+[20240623232405] - 175.119.8.102 message to user : 204/same id already exists
+[20240623232406] - 175.119.8.102 message from user : 
+
+[20240623232406] - 175.119.8.102 message to user : 
+
+[20240623232406] - 175.119.8.102 message from user : 
+
+[20240623232406] - 175.119.8.102 message to user : 
+
+[20240623232406] - 175.119.8.102 message from user : 
+
+[20240623232406] - 175.119.8.102 message to user : 
+
+[20240623232414] - 175.119.8.102 message from user : signup;testid;test;test
+[20240623232414] - 175.119.8.102 message to user : 204/same id already exists
+[20240623232414] - 175.119.8.102 message from user : 
+
+[20240623232414] - 175.119.8.102 message to user : 
+
+[20240623232414] - 175.119.8.102 message from user : 
+
+[20240623232414] - 175.119.8.102 message to user : 
+
+[20240623232414] - 175.119.8.102 message from user : 
+
+[20240623232414] - 175.119.8.102 message to user : 
+
+[20240623232427] - 175.119.8.102 message from user : signin;testid;testp
+[20240623232427] - 175.119.8.102 message to user : 209/incorrect password
+[20240623232430] - 175.119.8.102 message from user : 
+
+[20240623232430] - 175.119.8.102 message to user : 
+
+[20240623232440] - 175.119.8.102 message from user : signin;testid;testpw;
+[20240623232440] - 175.119.8.102 message to user : 200/signin success
+[20240623232533] - 175.119.8.102 message from user : signin
+[20240623232533] - 175.119.8.102 message to user : 206/already signed
+[20240623232549] - user connected - 175.119.8.102
+[20240623232557] - 175.119.8.102 message from user : signin;testid;testpw
+[20240623232557] - 175.119.8.102 message to user : 200/signin success
+[20240623232718] - user connected - 175.119.8.102
+[20240623232720] - user connected - 175.119.8.102
+[20240623232728] - 175.119.8.102 message from user : signin;testid;testpw
+[20240623232728] - 175.119.8.102 message to user : 200/signin success
+[20240623232735] - 175.119.8.102 message from user : signin;testid2;testpw2
+[20240623232735] - 175.119.8.102 message to user : 200/signin success
+[20240623232804] - user connected - 175.119.8.102
+[20240623232814] - 175.119.8.102 message from user : signin;testid;testpw
+[20240623232814] - 175.119.8.102 message to user : 200/signin success
+[20240623232823] - server closing
+[20240623232823] - Execuete 'show tables' query
+[20240623232823] - Log file closed
